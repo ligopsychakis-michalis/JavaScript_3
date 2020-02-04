@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Numbers & Years Facts</title>
+    <!-- bootsrap_4 css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- some css -->
+    <style>
+        body{
+            -webkit-touch-callout: none; 
+            -webkit-user-select: none; 
+            -khtml-user-select: none; 
+            -moz-user-select: none; 
+            -ms-user-select: none; 
+            user-select: none; 
+        }
+        .fact,#input{
+            display: none;
+        }
+        .container{
+            width: 30vw;
+        }
+        @media all and (max-width: 1000px) {
+            .container{
+                width: 50vw;
+            }
+        }   
+        @media all and (max-width: 550px) {
+            .container{
+                width: 90vw;
+            }
+        }  
+    </style>
+</head>
+<body class="bg-dark">
+    <div class="container bg-primary text-white mt-2 mt-sm-5 p-4">
+        <h1 class="text-center">Numbers & Years Facts</h1>
+        <p>Enter a <strong>number</strong> or a <strong>year</strong>, take and random <strong>Fact</strong>...</p>
+        <button id="btn-numbers" class="text-white bg-info mr-2"><strong>Numbers</strong></button>
+        <button id="btn-years" class="text-white bg-warning"><strong>Years</strong></button>
+        <input id="input" type="number" class="form-control mt-3">
+        <div class="fact p-3" >
+            <h4 id="fact-title"></h4>
+            <p id="fact-para"></p>
+        </div>             
+    </div>
+</div>
+    <script src="num-facts.js"></script>
+</body>
+</html>
