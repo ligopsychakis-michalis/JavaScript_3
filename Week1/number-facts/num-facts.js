@@ -14,7 +14,7 @@ function callFacts(){
         //API call based on the button that clicked last 
         const xhr = new XMLHttpRequest();
         if (buttonNumbers === true){
-            xhr.open("GET", `http://numbersapi.com/${num}`, true);
+            xhr.open("GET", `https://cors-anywhere.herokuapp.com/http://numbersapi.com/${num}`, true);
         }else{
             xhr.open("GET", `http://numbersapi.com/${num}/year`, true); 
         } 
