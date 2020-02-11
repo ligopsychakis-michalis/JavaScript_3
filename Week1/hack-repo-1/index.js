@@ -34,7 +34,7 @@
       text : `<strong>Repository:</strong> <a href = "${repo.html_url}">${repo.name}</a><br>
               <strong>Description:</strong> ${repo.description}<br>
               <strong>Forks:</strong> ${repo.forks}<br>
-              <strong>Uptade:</strong> ${repo.updated_at}`
+              <strong>Uptade:</strong> ${repo.updated_at.slice(0,4)}/${repo.updated_at.slice(5,7)}/${repo.updated_at.slice(8,10)}, ${repo.updated_at.slice(11,19)}`
     });
   }
 

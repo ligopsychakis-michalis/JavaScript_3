@@ -32,7 +32,7 @@
       text : `<strong>Repository:</strong> <a href = "${data.html_url}" target="_blank">${data.name}</a><br>
               <strong>Description:</strong> ${data.description}<br>
               <strong>Forks:</strong> ${data.forks}<br>
-              <strong>Uptade:</strong> ${data.updated_at}`        
+              <strong>Uptade:</strong> ${data.updated_at.slice(0,4)}/${data.updated_at.slice(5,7)}/${data.updated_at.slice(8,10)}, ${data.updated_at.slice(11,19)}`
     });
   }
 
