@@ -94,7 +94,7 @@ function getChannel(channel){
                     <li class='collection-item'>Views: ${numberWithDots(channel.statistics.viewCount)}</li>
                     <li class='collection-item'>Videos: ${numberWithDots(channel.statistics.videoCount)}</li>
                 </ul>
-                <p>${channel.snippet.discription}</p>
+                <p>${channel.snippet.description}</p>
                 <hr>
                 <a class='btn grey darken-2' target='_blank' href='https://youtube.com/${channel.snippet.customUrl}'>Visit Channel</a>
             `;
