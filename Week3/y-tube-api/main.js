@@ -1,4 +1,4 @@
-const clientId = "570509200895-4da0136v9n9cc5t369e1ij2bkerddlrt.apps.googleusercontent.com";
+const clientId = "295208744617-4g1v0mm429tra9a8orjrd14fp0obb78l.apps.googleusercontent.com";
 const discoveryDocs = ["https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest"];
 const scopes = "https://www.googleapis.com/auth/youtube.readonly";
 
