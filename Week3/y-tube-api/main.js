@@ -94,7 +94,7 @@ function getChannel(channel){
                     <li class='collection-item'>Views: ${numberWithDots(channel.statistics.viewCount)}</li>
                     <li class='collection-item'>Videos: ${numberWithDots(channel.statistics.videoCount)}</li>
                 </ul>
-                <p>${channel.snippet.discription}</p>
+                <p>${channel.snippet.description}</p>
                 <hr>
                 <a class='btn grey darken-2' target='_blank' href='https://youtube.com/${channel.snippet.customUrl}'>Visit Channel</a>
             `;
@@ -112,7 +112,7 @@ function requestVideoPlaylist(playListId){
     const requestOptions = {
         playlistId: playListId,
         part: 'snippet',
-        maxResults:10
+        maxResults:12
     }
     const request = gapi.client.youtube.playlistItems.list(requestOptions);
     request.execute(res => {
@@ -123,7 +123,7 @@ function requestVideoPlaylist(playListId){
             playlistItems.forEach(item => {
                 const videoId = item.snippet.resourceId.videoId;
                 output += `<div class="col s3">
-                <iframe width="100%" height="auto" src="https://youtube.com/embeded/${videoId}" 
+                <iframe width="100%" height="auto" src="https://youtube.com/embed/${videoId}" 
                 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>`
             })
